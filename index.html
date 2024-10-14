@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Document</title>
+	<title>CLTR store</title>
 
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -14,7 +14,59 @@
 
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/app.js" defer></script>
+	<style>
+		.textCostume2{
+		color: rgb(255, 255, 255, 0.79);
+		font-weight: bolder;
+	 }
+	 .textinvisible{
+		color: rgb(255,255,255,0);
+		user-select: none;
+	 }
+	 .image-fade {
+		mask-image: linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 1) 80%,            /* Полная непрозрачность до 80% */
+  rgba(0, 0, 0, 0.95) 82%,         /* Переход на 95% прозрачности */
+  rgba(0, 0, 0, 0.9) 84%,          /* 90% прозрачности */
+  rgba(0, 0, 0, 0.85) 86%,         /* 85% прозрачности */
+  rgba(0, 0, 0, 0.8) 88%,          /* 80% прозрачности */
+  rgba(0, 0, 0, 0.7) 89%,          /* 70% прозрачности */
+  rgba(0, 0, 0, 0.6) 90%,          /* 60% прозрачности */
+  rgba(0, 0, 0, 0.5) 91%,          /* 50% прозрачности */
+  rgba(0, 0, 0, 0.4) 92%,          /* 40% прозрачности */
+  rgba(0, 0, 0, 0.3) 93%,          /* 30% прозрачности */
+  rgba(0, 0, 0, 0.2) 94%,          /* 20% прозрачности */
+  rgba(0, 0, 0, 0.1) 95%,          /* 10% прозрачности */
+  rgba(0, 0, 0, 0.05) 96%,         /* 5% прозрачности */
+  rgba(0, 0, 0, 0.02) 97%,         /* 2% прозрачности */
+  rgba(0, 0, 0, 0.01) 98%,         /* 1% прозрачности */
+  rgba(0, 0, 0, 0) 100%            /* Полная прозрачность к концу */
+);
 
+-webkit-mask-image: linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 1) 80%, 
+  rgba(0, 0, 0, 0.95) 82%, 
+  rgba(0, 0, 0, 0.9) 84%, 
+  rgba(0, 0, 0, 0.85) 86%, 
+  rgba(0, 0, 0, 0.8) 88%, 
+  rgba(0, 0, 0, 0.7) 89%, 
+  rgba(0, 0, 0, 0.6) 90%, 
+  rgba(0, 0, 0, 0.5) 91%, 
+  rgba(0, 0, 0, 0.4) 92%, 
+  rgba(0, 0, 0, 0.3) 93%, 
+  rgba(0, 0, 0, 0.2) 94%, 
+  rgba(0, 0, 0, 0.1) 95%, 
+  rgba(0, 0, 0, 0.05) 96%, 
+  rgba(0, 0, 0, 0.02) 97%, 
+  rgba(0, 0, 0, 0.01) 98%, 
+  rgba(0, 0, 0, 0) 100%
+);
+      /* маска делает нижнюю часть прозрачной, без абсолютного позиционирования */
+    }
+	</style>
+	 <link rel="shortcut icon" href="../amir-site-main/img/icon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -29,42 +81,115 @@
 					</div>
 				</div>
 			</header>
-		
+			<header2 style="margin-bottom: 100vh;" class="hero-section-2">
+				<img data-speed=".6" class="hero2" src="img/CostumeBlackFinally.png" alt="Alt">
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title2 textCostume2">костюмы</h1>
+					</div>
+				</div>
+			</header2>
+			<header3 style="margin-bottom: 150vh;" class="hero-section-3">
+				<img data-speed=".9" class="hero3 image-fade " src="img/CostumeGrayCentreFinally.png" alt="Alt">
+			</header3>
+			<header4 class="hero-section-4">
+				<img data-speed=".6" class="hero4" src="img/SvitCenter.png" alt="Alt">
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title3 textCostume2">свитшоты</h1>
+					</div>
+				</div>
+			</header4>
+			<header5 class="hero-section-5">
+				<img data-speed=".9" class="hero5 image-fade" src="img/SvitCenter2.png" alt="Alt">
+			</header5>
 			<div class="portfolio">
 				<div class="container">
 					<main class="gallery">
 	
 						<div data-speed=".9" class="gallery__left">
-		
-							<img class="gallery__item" src="img/1_fon.png" alt="Alt">
-							<img class="gallery__item" src="img/swit-1.jpg" alt="Alt">
-		
-							<div class="text-block gallery__item">
-								<h2 class="text-block__h">Стань центром внимания с нашими костюмами!</h2>
-								<p class="text-block__p">Элегантные, стильные и идеально скроенные — наши костюмы подчеркнут вашу уверенность и индивидуальность в любом окружении. От классики до последних трендов, каждый комплект создан с вниманием к деталям, обеспечивая комфорт и идеальную посадку. Мы используем только высококачественные материалы, чтобы вы чувствовали себя на высоте, будь то важная деловая встреча или торжественное мероприятие.</p>
+							<!--img class="gallery__item" style="opacity: 0.0; scale:(0.1);" src="img/CostumeBlackFinally.png" alt="Alt"-->
+							<img class="gallery__item left1 image-fade " src="img/CostumeBlackLeftFinally.png" alt="Alt">
+							<img class="gallery__item left2 image-fade" src="img/CostumeLeft1.png" alt="Alt">	
+							<img class="gallery__item left3 image-fade" style="margin-right: -20vw; z-index: 99999;" src="img/CostumeLeft2.png" alt="Alt">
+							<div class="text-block gallery__item left4">
+								<h2 class="text-block__h textinvisible" style="margin-top: 10vh; font-weight: 1000; font-size: 3.5rem; letter-spacing: 0.05em;">
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Сюда хочется что-то большое яркое написать как у костюмов
 							</div>
-		
-							<img class="gallery__item" src="img/cos-2.png" alt="Alt">
-		
+							<img class="gallery__item left5 image-fade " src="img/SvitLeft1.png" alt="Alt">
+							<div class="text-block gallery__item left6">
+								<h2 class="text-block__h" style="margin-top: 40vh; line-height: 1.2; font-weight: 1000; font-size: 3.5rem; letter-spacing: 0.05em;">
+									Свитшоты — комфорт, стиль и уверенность
+								</h2>
+								<p class="text-block__p" style=" font-size: 1.8rem; line-height: 1.4; text-align: justify; text-align-last: left; margin: 0 auto; max-width: 1000px; font-family: 'DaysOne-c', sans-serif;  ">
+									Наши свитшоты — это не просто одежда, это ваш стиль, заявка на индивидуальность и просто идеальный вариант для любой ситуации. Мы создали модели, которые не захочется снимать. Уютные, мягкие, сделанные из качественных материалов, наши свитшоты станут вашими лучшими друзьями на каждый день.
+								</p>
+							</div>
+							<img class="gallery__item left7 image-fade " style="margin-top: 30vh; margin-right: -25vw; z-index: 1;" src="img/SvitLeftLAST.png" alt="Alt">
 						</div>
 
-						<div data-speed="1.1" class="gallery__right">
-		
-							<div class="text-block gallery__item">
-								<h2 class="text-block__h">Свитшоты — комфорт, стиль и уверенность</h2>
-								<p class="text-block__p">Наши свитшоты — это не просто одежда, это ваш стиль, заявка на индивидуальность и просто идеальный вариант для любой ситуации. Мы создали модели, которые не захочется снимать. Уютные, мягкие, сделанные из качественных материалов, наши свитшоты станут вашими лучшими друзьями на каждый день.</p>
+						<div data-speed=".9" class="gallery__right">
+
+	
+							<!--img class="gallery__item" style="opacity: 0.0; scale:(0.1)" src="img/CostumeBlackFinally.png" alt="Alt"-->
+							<img class="gallery__item right1 image-fade " src="img/CostumeBlackRightFinally.png" alt="Alt">
+							<div class="text-block gallery__item right2">
+								<h2 class="text-block__h" style="
+								margin-top: 10vh; 
+								font-weight: 1000;          /* Толщина шрифта (жирность) */
+								font-size: 3.5rem;           /* Размер шрифта */
+								line-height: 1.2;          /* Межстрочный интервал */
+								letter-spacing: 0.05em;    /* Межбуквенный интервал */">Стань центром внимания с нашими костюмами!</h2>
+								<p class="text-block__p" style="
+								font-size: 1.8rem;              /* Размер шрифта */
+								line-height: 1.4;               /* Межстрочный интервал для удобства чтения */
+								text-align: justify;            /* Выравнивание текста по ширине */
+								text-align-last: left;          /* Последняя строка выравнивается по левому краю */
+								margin: 0 auto;                 /* Центрирование блока (если требуется) */
+								max-width: 1000px;               /* Максимальная ширина для ограничения текста */
+								font-family: 'DaysOne-c', sans-serif;  /* Семейство шрифтов */">Элегантные, стильные и идеально скроенные — наши костюмы подчеркнут вашу уверенность и индивидуальность в любом окружении. От классики до последних трендов, каждый комплект создан с вниманием к деталям, обеспечивая комфорт и идеальную посадку. Мы используем только высококачественные материалы, чтобы вы чувствовали себя на высоте, будь то важная деловая встреча или торжественное мероприятие.
+								</p>
+							<!--p class="text-block__p" style="
+							font-size: 1.8rem;              /* Размер шрифта */
+							line-height: 1.5;               /* Межстрочный интервал для удобства чтения */
+							text-align: justify;            /* Выравнивание текста по ширине */
+							text-align-last: left;          /* Последняя строка выравнивается по левому краю */
+							margin: 0 auto;                 /* Центрирование блока (если требуется) */
+							max-width: 1000px;               /* Максимальная ширина для ограничения текста */
+							font-family: 'DaysOne-c', sans-serif; 
+							opacity: 0.0; /* Семейство шрифтов */"></!p-->
+						 	</div>
+							<img class="gallery__item right3 image-fade" style="left: 40vw; margin-left:-20vw ; z-index: -1;" src="img/CostumeRight2.png" alt="Alt">
+							<div class="text-block gallery__item right4 image-fade">
+								<h2 class="text-block__h textinvisible" style="margin-top: 10vh; font-weight: 500; font-size: 3.5rem; letter-spacing: 0.05em;">
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+									Стань центром внимания с нашими костюмами!
+								</h2>
 							</div>
-		
-							<img class="gallery__item" src="img/swit-2.jpg" alt="Alt">
-							<img class="gallery__item" src="img/cos-1.png" alt="Alt">
-							<img class="gallery__item" src="img/cos-3.png" alt="Alt">
-		
+							<img class="gallery__item right5 image-fade " style="left: 40vh;" src="img/SvitRight1.png" alt="Alt">
+							<img class="gallery__item right6 image-fade" style="left: 40vh;" src="img/SvitRightLast1.png" alt="Alt">
+							<img class="gallery__item right7 image-fade" style="left: 40vh; margin-top: -5vh; margin-left:-20vw;z-index: 12344;" src="img/SvitRightLAST.png" alt="Alt">
 						</div>
 
 					</main>
 				</div>
 			</div>
-
 		</div>
 	</div>
 

@@ -28,6 +28,66 @@ body {
 	font-family: DaysOne-c;
 	overflow-x: hidden;
 }
+/* Стили для навигации */
+/* Стили для навигации */
+/* Стили для навигации */
+nav.navbar {
+    background-color: #d1d1d1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;            /* Высота шапки */
+    display: flex;
+    justify-content: center; /* Центрируем контейнер по ширине */
+    padding: 0;              /* Убираем отступы по бокам */
+}
+
+.navbar-content {
+	margin-left: 30vh;
+	left: 100px;
+    display: flex;           /* Используем flex для расположения логотипа и меню */
+    align-items: center;     /* Центровка по высоте */
+    width: 100%;             /* Ширина контейнера 100% */
+    max-width: 1200px;      /* Максимальная ширина контейнера, можешь настроить по желанию */
+    padding: 0 20px;        /* Отступы по бокам внутри контейнера */
+}
+
+.navbar-brand {
+    margin-right: 15vh;      /* Отступ справа от логотипа */
+}
+
+.navbar-brand img {
+    height: 40px;   
+	align-items: center;        /* Высота логотипа */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Центровка меню */
+    gap: 30px;                /* Расстояние между пунктами меню */
+    list-style: none;
+    padding: 0;               /* Убедимся, что отступы нет */
+    margin: 0;                /* Убедимся, что отступы нет */
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    color: #636366;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;        /* Отступы вокруг текста */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #a39f9f;
+}
 .hero {
 	width: calc(var(--index) * 36);
 	position: absolute;
@@ -46,7 +106,7 @@ body {
 	width: calc(var(--index) * 25);
 	position: absolute;
 	left: 30vw;
-	top: 250vh;
+	top: 240vh;
 	z-index: 1;
 }
 .hero4{
@@ -136,3 +196,71 @@ body {
 .text-block__p {
 	line-height: 1.75;
 }
+/* Мобильная версия для устройств до 400 пикселей */
+/*@media (max-width: 500px) {
+	body {
+		height: 900px; /* Устанавливаем высоту для экрана 400x900 
+	}
+
+	.hero {
+		width: calc(var(--index) * 28.8); /* Уменьшаем ширину пропорционально 
+	}
+
+	.hero2 {
+		width: calc(var(--index) * 28.8); /* Уменьшаем ширину пропорционально 
+	}	
+
+	.hero3 {
+		width: calc(var(--index) * 20); /* Уменьшаем ширину пропорционально 
+	}
+
+	.hero4 {
+		width: calc(var(--index) * 20); /* Уменьшаем ширину пропорционально 
+	}
+
+	.hero5 {
+		width: calc(var(--index) * 20); /* Уменьшаем ширину пропорционально 
+	}
+
+	
+	.main-title{
+		font-size: calc(var(--index) * 5);
+		left: 100vh;
+	}
+	.main-title2{
+		font-size: calc(var(--index) * 5);
+	}
+	.main-title3 {
+		font-size: calc(var(--index) * 5); 
+
+	}
+
+	.navbar {
+		height: 50px; /* Уменьшаем высоту шапки 
+	}
+
+	.nav-link {
+		font-size: 14px; /* Уменьшаем размер шрифта в навигации 
+	}
+	.text-block__p {
+		font-size: calc(var(--index) * 1.5); /* Уменьшаем размер текста пропорционально 
+	}
+	.textright1 {
+        margin-top: 8vh;                /* Уменьшаем верхний отступ 
+        font-weight: 600;                /* Толщина шрифта 
+        font-size: 2rem;                 /* Размер шрифта 
+        line-height: 1.2;                /* Межстрочный интервал 
+        letter-spacing: 0.02em;          /* Межбуквенный интервал 
+    }
+
+    .textright2 {
+        font-size: 1rem;                 /* Размер шрифта 
+        line-height: 1.4;                /* Межстрочный интервал 
+        text-align: justify;              /* Выравнивание текста по ширине 
+        text-align-last: left;            /* Последняя строка выравнивается по левому краю 
+        margin: 0 auto;                   /* Центрирование блока (если требуется) 
+        max-width: 90%;                   /* Уменьшаем максимальную ширину для ограничения текста 
+        font-family: 'DaysOne-c', sans-serif; /* Семейство шрифтов 
+    }
+}
+	*/

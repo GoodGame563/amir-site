@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #080808;
+	--color-text: #161616;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+@font-face {
+	font-family: DaysOne-c;
+	src: url(../fonts/DaysOne-Regular.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: DaysOne-c;
+	font-weight: 600;
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+ html{
+    overflow-x: hidden;
+ }
+body {
+	background-image: url(../img/bg1.jpg);
+	background-size: 50px;
+	color: #ffffff;
+	font-family: DaysOne-c;
+	overflow-x: hidden;
+}
+/* Стили для навигации */
+/* Стили для навигации */
+/* Стили для навигации */
+nav.navbar {
+    max-width: 400px;
+    background-color: #d1d1d1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;            /* Высота шапки */
+    justify-content: center; /* Центрируем контейнер по ширине */
+    padding: 0;              /* Убираем отступы по бокам */
+}
+
+.navbar-content {
+	margin-left: 1vh;
+	left: -50vh;
+    display: flex;           /* Используем flex для расположения логотипа и меню */
+    align-items: center;     /* Центровка по высоте */
+    width: 100%;             /* Ширина контейнера 100% */
+    max-width: 400px;      /* Максимальная ширина контейнера, можешь настроить по желанию */
+    padding: 0 20px;        /* Отступы по бокам внутри контейнера */
+}
+
+.navbar-brand {
+    margin-right: 10px;      /* Отступ справа от логотипа */
+}
+
+.navbar-brand img {
+    margin-top: 5px;
+    height: 40px;   
+	align-items: center;        /* Высота логотипа */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Центровка меню */
+    gap: 10px;                /* Расстояние между пунктами меню */
+    list-style: none;
+    padding: 0;               /* Убедимся, что отступы нет */
+    margin: 0;                /* Убедимся, что отступы нет */
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    color: #636366;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;        /* Отступы вокруг текста */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+.hero {
+	width: calc(var(--index) * 40);
+	position: absolute;
+	left: -5vw;
+	top: 22vh;
+	z-index: -1;
+}
+.hero2{
+	width: calc(var(--index) * 36);
+	position: absolute;
+	left: -3vw;
+	top: 100vh;
+	z-index: -1;
+}
+.hero3{
+	width: calc(var(--index) * 25);
+	position: absolute;
+	left: 18vw;
+	top: 150vh;
+	z-index: 1;
+}
+.hero4{
+	width: calc(var(--index) * 25);
+	position: absolute;
+	left: 15vw;
+	top: 320vh;
+	z-index: -1;
+}
+.hero5{
+	width: calc(var(--index) * 25);
+	position: absolute;
+	left: 15vw;
+	top: 380vh;
+	z-index: 1;
+}
+.main-header {
+	height: 100vh;
+}
+.main-header {
+	height: 100vh;
+}
+.container {
+	padding: 0 7vw;
+}
+.main-title {
+	font-size: calc(var(--index) * 5);
+	position: absolute;
+	width: min-content;
+	bottom: 20vh;
+    left: 8vh;
+	line-height: .9;
+	font-weight: 120;
+}
+.main-title2 {
+	font-size: calc(var(--index) * 4);
+	position: absolute;
+	width: min-content;
+	left: 9vh;
+	bottom: 90vh;
+	line-height: .9;
+}
+.main-title3 {
+	font-size: calc(var(--index) * 4);
+	position: absolute;
+	width: min-content;
+	left: 6vh;
+	bottom: -35vh;
+	line-height: .9;
+}
+.gallery {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+.gallery > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gallery__item {
+	max-width: calc(var(--index) * 21);
+	margin-bottom: var(--gallery-gap)*-0.7;
+	max-height: 180vh;  
+	border-radius: 8px;
+}
+.gallery__left {
+	margin-top: calc(var(--gallery-gap) * -13.7);
+}
+.gallery__right {
+	margin-top: calc(var(--gallery-gap) * -15);
+}
+
+.gallery__right .gallery__item {
+	margin: 0;
+	margin-top: var(--gallery-gap);
+}
+.text-block {
+	color: var(--color-text);
+	position: relative;
+}
+.text-block__h {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: var(--color-header);
+	margin-bottom: 1.5rem;
+}
+.text-block__p {
+	line-height: 1.75;
+}

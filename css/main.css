@@ -18,76 +18,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 /* will-change */
-.content, .hero, .main-header, .gallery > * {
+.main-body-content-full-size, .hero, .main-header, .gallery > * {
 	will-change: transform;
 }
 body {
 	background-image: url(../img/bg1.jpg);
 	background-size: 50px;
-	color: #ffffff;
 	font-family: DaysOne-c;
 	overflow-x: hidden;
 }
-/* Стили для навигации */
-/* Стили для навигации */
-/* Стили для навигации */
-nav.navbar {
-    background-color: #d1d1d1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 60px;            /* Высота шапки */
-    display: flex;
-    justify-content: center; /* Центрируем контейнер по ширине */
-    padding: 0;              /* Убираем отступы по бокам */
-}
 
-.navbar-content {
-	margin-left: 30vh;
-	left: 100px;
-    display: flex;           /* Используем flex для расположения логотипа и меню */
-    align-items: center;     /* Центровка по высоте */
-    width: 100%;             /* Ширина контейнера 100% */
-    max-width: 1200px;      /* Максимальная ширина контейнера, можешь настроить по желанию */
-    padding: 0 20px;        /* Отступы по бокам внутри контейнера */
-}
-
-.navbar-brand {
-    margin-right: 15vh;      /* Отступ справа от логотипа */
-}
-
-.navbar-brand img {
-    height: 40px;   
-	align-items: center;        /* Высота логотипа */
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: center;  /* Центровка меню */
-    gap: 30px;                /* Расстояние между пунктами меню */
-    list-style: none;
-    padding: 0;               /* Убедимся, что отступы нет */
-    margin: 0;                /* Убедимся, что отступы нет */
-}
-
-.nav-item {
-    text-align: center;
-}
-
-.nav-link {
-    color: #636366;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 5px 10px;        /* Отступы вокруг текста */
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #a39f9f;
-}
 .hero {
 	width: calc(var(--index) * 36);
 	position: absolute;
@@ -120,16 +60,13 @@ nav.navbar {
 	width: calc(var(--index) * 25);
 	position: absolute;
 	left: 30vw;
-	top: 750vh;
+	top: 790vh;
 	z-index: 1;
 }
 .main-header {
 	height: 100vh;
 }
-.main-header {
-	height: 100vh;
-}
-.container {
+.content-container-full-size {
 	padding: 0 7vw;
 }
 .main-title {
@@ -196,71 +133,106 @@ nav.navbar {
 .text-block__p {
 	line-height: 1.75;
 }
-/* Мобильная версия для устройств до 400 пикселей */
-/*@media (max-width: 500px) {
-	body {
-		height: 900px; /* Устанавливаем высоту для экрана 400x900 
-	}
+.textCostume2{
+	color: rgb(255, 255, 255, 0.79);
+	font-weight: bolder;
+ }
+ .textinvisible{
+	color: rgb(255,255,255,0);
+	user-select: none;
+ }
+.image-fade {
+	mask-image: linear-gradient(
+	to bottom,
+	rgba(0, 0, 0, 1) 80%,            /* Полная непрозрачность до 80% */
+	rgba(0, 0, 0, 0.95) 82%,         /* Переход на 95% прозрачности */
+	rgba(0, 0, 0, 0.9) 84%,          /* 90% прозрачности */
+	rgba(0, 0, 0, 0.85) 86%,         /* 85% прозрачности */
+	rgba(0, 0, 0, 0.8) 88%,          /* 80% прозрачности */
+	rgba(0, 0, 0, 0.7) 89%,          /* 70% прозрачности */
+	rgba(0, 0, 0, 0.6) 90%,          /* 60% прозрачности */
+	rgba(0, 0, 0, 0.5) 91%,          /* 50% прозрачности */
+	rgba(0, 0, 0, 0.4) 92%,          /* 40% прозрачности */
+	rgba(0, 0, 0, 0.3) 93%,          /* 30% прозрачности */
+	rgba(0, 0, 0, 0.2) 94%,          /* 20% прозрачности */
+	rgba(0, 0, 0, 0.1) 95%,          /* 10% прозрачности */
+	rgba(0, 0, 0, 0.05) 96%,         /* 5% прозрачности */
+	rgba(0, 0, 0, 0.02) 97%,         /* 2% прозрачности */
+	rgba(0, 0, 0, 0.01) 98%,         /* 1% прозрачности */
+	rgba(0, 0, 0, 0) 100%            /* Полная прозрачность к концу */
+	);
 
-	.hero {
-		width: calc(var(--index) * 28.8); /* Уменьшаем ширину пропорционально 
-	}
-
-	.hero2 {
-		width: calc(var(--index) * 28.8); /* Уменьшаем ширину пропорционально 
-	}	
-
-	.hero3 {
-		width: calc(var(--index) * 20); /* Уменьшаем ширину пропорционально 
-	}
-
-	.hero4 {
-		width: calc(var(--index) * 20); /* Уменьшаем ширину пропорционально 
-	}
-
-	.hero5 {
-		width: calc(var(--index) * 20); /* Уменьшаем ширину пропорционально 
-	}
-
-	
-	.main-title{
-		font-size: calc(var(--index) * 5);
-		left: 100vh;
-	}
-	.main-title2{
-		font-size: calc(var(--index) * 5);
-	}
-	.main-title3 {
-		font-size: calc(var(--index) * 5); 
-
-	}
-
-	.navbar {
-		height: 50px; /* Уменьшаем высоту шапки 
-	}
-
-	.nav-link {
-		font-size: 14px; /* Уменьшаем размер шрифта в навигации 
-	}
-	.text-block__p {
-		font-size: calc(var(--index) * 1.5); /* Уменьшаем размер текста пропорционально 
-	}
-	.textright1 {
-        margin-top: 8vh;                /* Уменьшаем верхний отступ 
-        font-weight: 600;                /* Толщина шрифта 
-        font-size: 2rem;                 /* Размер шрифта 
-        line-height: 1.2;                /* Межстрочный интервал 
-        letter-spacing: 0.02em;          /* Межбуквенный интервал 
-    }
-
-    .textright2 {
-        font-size: 1rem;                 /* Размер шрифта 
-        line-height: 1.4;                /* Межстрочный интервал 
-        text-align: justify;              /* Выравнивание текста по ширине 
-        text-align-last: left;            /* Последняя строка выравнивается по левому краю 
-        margin: 0 auto;                   /* Центрирование блока (если требуется) 
-        max-width: 90%;                   /* Уменьшаем максимальную ширину для ограничения текста 
-        font-family: 'DaysOne-c', sans-serif; /* Семейство шрифтов 
-    }
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1) 80%, 
+		rgba(0, 0, 0, 0.95) 82%, 
+		rgba(0, 0, 0, 0.9) 84%, 
+		rgba(0, 0, 0, 0.85) 86%, 
+		rgba(0, 0, 0, 0.8) 88%, 
+		rgba(0, 0, 0, 0.7) 89%, 
+		rgba(0, 0, 0, 0.6) 90%, 
+		rgba(0, 0, 0, 0.5) 91%, 
+		rgba(0, 0, 0, 0.4) 92%, 
+		rgba(0, 0, 0, 0.3) 93%, 
+		rgba(0, 0, 0, 0.2) 94%, 
+		rgba(0, 0, 0, 0.1) 95%, 
+		rgba(0, 0, 0, 0.05) 96%, 
+		rgba(0, 0, 0, 0.02) 97%, 
+		rgba(0, 0, 0, 0.01) 98%, 
+		rgba(0, 0, 0, 0) 100%
+		);
 }
-	*/
+
+.navbar {
+	background-color: #d1d1d1 !important; /* Цвет фона шапки */
+	height: 44px !important;              /* Высота шапки */
+	padding: 0 !important;                /* Убираем внутренние отступы */
+}
+
+.navbar-brand img {
+	height: 29px !important;              /* Высота логотипа */
+	/* margin-left: 57vh; */
+	align-items: center;
+}
+
+.navbar-nav {
+	display: flex !important;
+	align-items: center !important;       /* Центровка текста по высоте */
+	gap: 37px !important;                 /* Расстояние между пунктами меню */
+	margin-left: -1.4vh !important;         /* Выталкиваем меню вправо */
+	padding: 0 !important;                /* Убираем отступы */
+}
+
+.nav-item {
+	margin: 0 !important;                 /* Убираем отступы у элементов списка */
+}
+
+.nav-link {
+	color: #636366 !important;            /* Цвет текста */
+	font-size: 11.5px !important;           /* Размер шрифта */
+	font-weight: 100!important;          /* Жирность текста */
+	font-family: DaysOne-c;
+	text-transform: uppercase !important; /* Заглавные буквы */
+	text-decoration: none !important;     /* Убираем подчеркивание */
+	padding: 0 !important;                /* Убираем отступы вокруг текста */
+	line-height: 60px !important;         /* Устанавливаем высоту строки для центрирования текста */
+	transition: color 0.3s ease !important; /* Плавный переход цвета при наведении */
+}
+
+.nav-link:hover {
+	color: #000 !important;               /* Цвет при наведении */
+}
+
+footer {
+	background-image: url(../img/bg1.jpg);
+	left: 0px;
+	position: absolute;
+	z-index: 100;
+	bottom: -5vh;
+    user-select:  #cccccc;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	right: 0;
+}
+.footer-line {
+	border-top: 2px solid #ccc; 
+}

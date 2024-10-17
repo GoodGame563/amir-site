@@ -3,8 +3,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 if (ScrollTrigger.isTouch !== 1) {
 
     ScrollSmoother.create({
-        wrapper: '.wrapper',
-        content: '.content',
+        wrapper: '.main-body-full-size',
+        content: '.main-body-content-full-size',
         smooth: 1.5,
         effects: true
     })
@@ -49,18 +49,6 @@ if (ScrollTrigger.isTouch !== 1) {
             scrub: true,
           }
         })
- /*  gsap.fromTo('.hero-section-4', 
-        { opacity: 1 }, 
-        {
-        opacity: 0,
-        scrollTrigger: {
-        trigger: '.hero-section-4',
-        start: 'top -700%',  // Начало исчезновения, когда верх элемента дойдет до середины экрана
-        end: '1640',        // Конец исчезновения через 1000 пикселей после начала
-        scrub: true,
-            }
-        })
-*/
     // Замедляем исчезновение изображений слева и справа
     const leftAndRightFadeEnd = '1000';  // Увеличенное значение для медленного исчезновения
 

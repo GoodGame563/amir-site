@@ -2,10 +2,12 @@
 <html lang="ru">
     <link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
 <head>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/min.css">
     <style>
            @font-face {
 	    font-family: DaysOne-c;
@@ -33,8 +35,8 @@
 	       
         }
         body{
-            background-image: url(../img/bg1.jpg);
-	background-size: 50px;
+            background-image: url(img/bg1.jpg);
+	        background-size: 50px;
             margin: 0;
             padding: 0;
             height: 100%;
@@ -66,66 +68,40 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        .custom-navbar {
-    background-color: #d1d1d1;
-    height: 50px;
-    padding: 0; /* Убираем отступы сверху и снизу */
-}
-
-.logo {
-    height: 40px; /* Логотип на одном уровне с текстом */
-}
-
-.navbar-nav {
-    font-size: 12px; /* Делаем шрифт чуть больше для читаемости */
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 0px;
-}
-
-.navbar-nav .nav-link {
-    color: #636366 !important;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin: 0 15px; /* Минимальный отступ между пунктами меню */
-    padding: 0; /* Убираем отступы внутри ссылок */
-    line-height: 50px; /* Выравнивание текста по высоте */
-    font-size: 10px; /* Размер текста */
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #000000 !important;
-}
-
-.navbar-brand {
-    position: relative; /* Делаем позицию относительной */
-    left: 12px; /* Сдвигаем логотип правее */
-}
-        /* Применение шрифта SF Pro к заголовку h2 */
-        /* Стили для карточек товаров */
-        .product-card {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
+        footer {
+            background-image: url(../img/bg1.jpg);
+            left: 0px;
+            position: absolute;
+            z-index: 100;
+            user-select:  #cccccc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            right: 0;
+        }
 .section-title {
             margin-bottom: 30px;
             font-size: 2.5rem;
         }
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section-title {
+                    margin-bottom: 30px;
+                    font-size: 2.5rem;
+                }
 
-.product-card img {
-    width: 100%; /* Заполняет всю ширину карточки */
-    height: auto; /* Автоматически подстраивается по высоте */
-    object-fit: cover; /* Занимает всю доступную площадь */
-    max-height: 300px; /* Максимальная высота изображения */
-}
+        .product-card img {
+            width: 100%; /* Заполняет всю ширину карточки */
+            height: auto; /* Автоматически подстраивается по высоте */
+            object-fit: cover; /* Занимает всю доступную площадь */
+            max-height: 300px; /* Максимальная высота изображения */
+        }
     @media (min-width:400){
         .navbar-expand-lg .navbar-nav .nav-link {
                     padding-right: .5rem; 
@@ -151,154 +127,186 @@
 </head>
 <body>
 <!-- Загрузка анимация -->
-<div class="loader">
-    <img src="img/LogoVeryBig.png" alt="Загрузка...">
-</div>
-<nav class="navbar navbar-light fixed-top custom-navbar">
-    <div class="container-fluid d-flex justify-content-start align-items-center px-3">
-        <a class="navbar-brand m-0 d-flex align-items-center" href="#">
-            <img src="img/LogoBig.png" alt="Лого" class="logo">
-        </a>
-        <ul class="navbar-nav flex-row ml-3">
-            <li class="nav-item">
-                <a class="nav-link" href="small.html">Главная</a>
+    <div class="loader">
+        <img src="img/LogoVeryBig.png" alt="Загрузка...">
+    </div>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <ul class="navbar-nav w-100 justify-content-center d-flex flex-row" style="height: 100%; margin: 0;">
+            <li class="nav-item d-flex align-items-center">
+                <a class="navbar-brand" href="#" onclick="reloadPage()" style="padding: 0;">
+                    <img src="img/LogoBig.png" alt="Лого">
+                </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="catalogsmall.html">Каталог</a>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="small.html" style="font-size: 10px; padding: 0 5px;">Главная</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">История бренда</a>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="catalogsmall.html" style="font-size: 10px; padding: 0 5px;">Каталог</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="historysmall.html" style="font-size: 10px; padding: 0 5px;">История бренда</a>
             </li>
         </ul>
+    </nav>
+    <div class="container mt-5 pt-5" id="catalog">
+        <section class="product-section">
+            <h2 class="mb-4">Свитшоты</h2>
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitBlackChrome.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitBlackGray.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitBlackChrome.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitGorchi.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitGranit.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitEchruZamena.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitJem.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitKirpichZamena.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitLavanda.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitPortvein.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitSeroGolyb.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/SvitGortenziya.png" alt="Свитшот Black Chrome">
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="product-section">
+            <h2 class="mb-4">Костюмы</h2>
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/CostumeLeft1.png" class="img-fluid rounded" alt="Costume 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <div class="product-card">
+                        <a href="https://www.wildberries.ru/seller/4208651">
+                            <img src="img/CostumeLeft2.png" class="img-fluid rounded" alt="Costume 1">
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </section>
     </div>
-</nav>
-<div class="container mt-5 pt-5" id="catalog">
-    <section class="product-section">
-        <h2 class="mb-4">Свитшоты</h2>
-        <div class="row">
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitBlackChrome.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
+    <div class="textfoter" data-speed=".9">
+        <hr class="footer-line">
+        <div class="container">
+            <div class="row">
+                <a href="#">
+                    <img src="img/LogoBig.png" alt="Логотип" style="width: 20px; height: auto; margin-bottom: 10px;">
+                </a>
             </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitBlackGray.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitBlackChrome.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitGorchi.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitGranit.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitEchruZamena.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitJem.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitKirpichZamena.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitLavanda.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitPortvein.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitSeroGolyb.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/SvitGortenziya.png" alt="Свитшот Black Chrome">
-                    </a>
-                </div>
-            </div>
-            </div>
-    </section>
+            <div class="row">
+                <div class="col">
 
-    <section class="product-section">
-        <h2 class="mb-4">Костюмы</h2>
-        <div class="row">
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/CostumeLeft1.png" class="img-fluid rounded" alt="Costume 1">
-                    </a>
+                    <h5>О компании</h5>
+                    <p>О нас</p>
+                    <p>Реквизиты</p>
+                    <p>Политика конфиденциальности</p>
+                    <p>© 2024 ООО Культура. Все права защищены.</p>
+                </div>
+                <div class="col">
+                    <h5>Контакты</h5>
+                    <ul>
+                        <p><a href="">г. Казань, Рахимова 8</a></p>
+                        <p><a href="">+7 (800) 234-48-98</a></p>	
+                        <p><a href="">Контакты</a></p>
+                        <a href="https://vk.com/club227785632">
+                            <img src="img/VK.png" alt="Логотип" style="width: 20px; height: auto;">
+                        </a>
+                    </ul>
                 </div>
             </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-4">
-                <div class="product-card">
-                    <a href="https://www.wildberries.ru/seller/4208651">
-                        <img src="img/CostumeLeft2.png" class="img-fluid rounded" alt="Costume 1">
-                    </a>
-                </div>
-            </div>
-            </div>
-    </section>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div> 
+    </div>
 
-<script>
-    // Задержка для анимации загрузки
-    $(window).on('load', function() {
-        $('.loader').fadeOut(1000, function() {
-            $('#catalog').removeClass('hidden').addClass('visible');
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Задержка для анимации загрузки
+        $(window).on('load', function() {
+            $('.loader').fadeOut(1000, function() {
+                $('#catalog').removeClass('hidden').addClass('visible');
+            });
         });
-    });
-</script>
- <script>
-    function reloadPage() {
-        location.reload();
-    }
- </script>
+    </script>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
 </body>
 </html>

@@ -11,96 +11,47 @@
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/app.js" defer></script>
-	<style>
-		.textCostume2{
-		color: rgb(255, 255, 255, 0.79);
-		font-weight: bolder;
-	 }
-	 .textinvisible{
-		color: rgb(255,255,255,0);
-		user-select: none;
-	 }
-	 .image-fade {
-		mask-image: linear-gradient(
-  to bottom,
-  rgba(0, 0, 0, 1) 80%,            /* Полная непрозрачность до 80% */
-  rgba(0, 0, 0, 0.95) 82%,         /* Переход на 95% прозрачности */
-  rgba(0, 0, 0, 0.9) 84%,          /* 90% прозрачности */
-  rgba(0, 0, 0, 0.85) 86%,         /* 85% прозрачности */
-  rgba(0, 0, 0, 0.8) 88%,          /* 80% прозрачности */
-  rgba(0, 0, 0, 0.7) 89%,          /* 70% прозрачности */
-  rgba(0, 0, 0, 0.6) 90%,          /* 60% прозрачности */
-  rgba(0, 0, 0, 0.5) 91%,          /* 50% прозрачности */
-  rgba(0, 0, 0, 0.4) 92%,          /* 40% прозрачности */
-  rgba(0, 0, 0, 0.3) 93%,          /* 30% прозрачности */
-  rgba(0, 0, 0, 0.2) 94%,          /* 20% прозрачности */
-  rgba(0, 0, 0, 0.1) 95%,          /* 10% прозрачности */
-  rgba(0, 0, 0, 0.05) 96%,         /* 5% прозрачности */
-  rgba(0, 0, 0, 0.02) 97%,         /* 2% прозрачности */
-  rgba(0, 0, 0, 0.01) 98%,         /* 1% прозрачности */
-  rgba(0, 0, 0, 0) 100%            /* Полная прозрачность к концу */
-);
-
--webkit-mask-image: linear-gradient(
-  to bottom,
-  rgba(0, 0, 0, 1) 80%, 
-  rgba(0, 0, 0, 0.95) 82%, 
-  rgba(0, 0, 0, 0.9) 84%, 
-  rgba(0, 0, 0, 0.85) 86%, 
-  rgba(0, 0, 0, 0.8) 88%, 
-  rgba(0, 0, 0, 0.7) 89%, 
-  rgba(0, 0, 0, 0.6) 90%, 
-  rgba(0, 0, 0, 0.5) 91%, 
-  rgba(0, 0, 0, 0.4) 92%, 
-  rgba(0, 0, 0, 0.3) 93%, 
-  rgba(0, 0, 0, 0.2) 94%, 
-  rgba(0, 0, 0, 0.1) 95%, 
-  rgba(0, 0, 0, 0.05) 96%, 
-  rgba(0, 0, 0, 0.02) 97%, 
-  rgba(0, 0, 0, 0.01) 98%, 
-  rgba(0, 0, 0, 0) 100%
-);
-      /* маска делает нижнюю часть прозрачной, без абсолютного позиционирования */
-    }
-	</style>
-	<link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 </head>
 <body>
-	<nav class="navbar fixed-top">
-		<div class="navbar-content">  <!-- Новый контейнер для логотипа и меню -->
-			<a class="navbar-brand" href="">
-				<img src="img/LogoBig.png" alt="Лого" onclick="reloadPage()">
-			</a>
-			<ul class="navbar-nav">
+	<header class="navbar navbar-expand-lg fixed-top " style="background-color: #d1d1d1; padding: 0; height: 40px;">
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav w-100 justify-content-center" style="height: 100%; margin: 0;">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html">Главная</a>
+					<a class="navbar-brand" href="#" onclick="reloadPage()" style="padding: 0;">
+						<img src="img/LogoBig.png" alt="Лого">
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="catalog2.html">Каталог</a>
+					<a class="nav-link" href="index.html" style="font-size: 16px; padding: 0 15px;">Главная</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">История бренда</a>
+					<a class="nav-link" href="catalog2.html" style="font-size: 16px; padding: 0 15px;">Каталог</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="history.html" style="font-size: 16px; padding: 0 15px;">История бренда</a>
 				</li>
 			</ul>
 		</div>
-	</nav>
-	<div class="wrapper">
-		<div class="content">
-
+	</header>
+	
+	<div class="main-body-full-size">
+		<div class="main-body-content-full-size">
 			<header class="hero-section">
 				<img data-speed=".6" class="hero" src="img/LogoVeryBig.png" alt="Alt">
-				<div class="container">
-					<div data-speed=".75" class="main-header">
+				<div class="content-container-full-size">
+					<div data-speed=".75" class="main-header" style="color: #ffffff;">
 						<h1 class="main-title">Cultura</h1>
 					</div>
 				</div>
 			</header>
 			<header2 style="margin-bottom: 100vh;" class="hero-section-2">
 				<img data-speed=".6" class="hero2" src="img/CostumeBlackFinally.png" alt="Alt">
-				<div class="container">
+				<div class="content-container-full-size">
 					<div data-speed=".75" class="main-header">
 						<h1 class="main-title2 textCostume2">костюмы</h1>
 					</div>
@@ -111,7 +62,7 @@
 			</header3>
 			<header4 class="hero-section-4">
 				<img data-speed=".6" class="hero4" src="img/SvitCenter.png" alt="Alt">
-				<div class="container">
+				<div class="content-container-full-size">
 					<div data-speed=".75" class="main-header">
 						<h1 class="main-title3 textCostume2">свитшоты</h1>
 					</div>
@@ -121,9 +72,8 @@
 				<img data-speed=".9" class="hero5 image-fade" src="img/SvitCenter2.png" alt="Alt">
 			</header5>
 			<div class="portfolio">
-				<div class="container">
+				<div class="content-container-full-size">
 					<main class="gallery">
-	
 						<div data-speed=".9" class="gallery__left">
 							<!--img class="gallery__item" style="opacity: 0.0; scale:(0.1);" src="img/CostumeBlackFinally.png" alt="Alt"-->
 							<img class="gallery__item left1 image-fade " src="img/CostumeBlackLeftFinally.png" alt="Alt">
@@ -153,7 +103,7 @@
 									Наши свитшоты — это не просто одежда, это ваш стиль, заявка на индивидуальность и просто идеальный вариант для любой ситуации. Мы создали модели, которые не захочется снимать. Уютные, мягкие, сделанные из качественных материалов, наши свитшоты станут вашими лучшими друзьями на каждый день.
 								</p>
 							</div>
-							<img class="gallery__item left7 image-fade " style="margin-top: 30vh; margin-right: -25vw; z-index: 1;" src="img/SvitLeftLAST.png" alt="Alt">
+							<img class="gallery__item left7 image-fade " style="margin-top: 30vh; margin-right: -25vw; z-index: 1; margin-bottom: 3cm;" src="img/SvitLeftLAST.png" alt="Alt">
 						</div>
 
 						<div data-speed=".9" class="gallery__right">
@@ -201,14 +151,47 @@
 							</div>
 							<img class="gallery__item right5 image-fade " style="left: 40vh;" src="img/SvitRight1.png" alt="Alt">
 							<img class="gallery__item right6 image-fade" style="left: 40vh;" src="img/SvitRightLast1.png" alt="Alt">
-							<img class="gallery__item right7 image-fade" style="left: 40vh; margin-top: -5vh; margin-left:-20vw;z-index: 12344;" src="img/SvitRightLAST.png" alt="Alt">
+							<img class="gallery__item right7 image-fade" style="left: 40vh; margin-top: -5vh; margin-left:-20vw;z-index: 12344; margin-bottom: 3cm;" src="img/SvitRightLAST.png" alt="Alt">
 						</div>
-
+		
 					</main>
 				</div>
 			</div>
+			<footer class="textfoter" data-speed=".9" ></footer>
+				<hr class="footer-line">
+				<div class="container">
+					<div class="row">
+						<a href="#">
+							<img src="img/LogoBig.png" alt="Логотип" style="width: 20px; height: auto; margin-bottom: 10px;">
+						</a>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h5>О компании</h5>
+							<p>О нас</p>
+							<p>Реквизиты</p>
+							<p>Политика конфиденциальности</p>
+							<p>© 2024 ООО Культура. Все права защищены.</p>
+						</div>
+						<div class="col">
+							<h5>Контакты</h5>
+							<ul>
+								<p><a href="">г. Казань, Рахимова 8</a></p>
+								<p><a href="">+7 (800) 234-48-98</a></p>	
+								<p><a href="">Контакты</a></p>
+								<a href="https://vk.com/club227785632">
+									<img src="img/VK.png" alt="Логотип" style="width: 20px; height: auto;">
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div> 
+			</footer>
 		</div>
+	
 	</div>
+	
+	
 
 </body>
 </html>

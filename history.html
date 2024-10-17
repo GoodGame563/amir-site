@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История бренда</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @font-face {
+	    font-family: DaysOne-c;
+	    src: url(fonts/DaysOne-Regular.ttf);
+    }
+    html{
+      color: #1f1f1f;
+    }
+    body{
+      background-image: url(img/bg1.jpg);
+      background-size: 50px;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     overflow-x: hidden;
+     background-size: 50px;
+	   color: #1f1f1f;
+	   font-family: DaysOne-c;
+    }
+    .image-fade-for-photos {mask-image: linear-gradient(to bottom,rgba(0, 0, 0, 1) 80%,rgba(0, 0, 0, 0.95) 82%,rgba(0, 0, 0, 0.9) 84%,rgba(0, 0, 0, 0.85) 86%,rgba(0, 0, 0, 0.8) 88%,rgba(0, 0, 0, 0.7) 89%,rgba(0, 0, 0, 0.6) 90%,rgba(0, 0, 0, 0.5) 91%,rgba(0, 0, 0, 0.4) 92%,rgba(0, 0, 0, 0.3) 93%,rgba(0, 0, 0, 0.2) 94%,rgba(0, 0, 0, 0.1) 95%,rgba(0, 0, 0, 0.05) 96%,rgba(0, 0, 0, 0.02) 97%,rgba(0, 0, 0, 0.01) 98%,rgba(0, 0, 0, 0) 100%
+);
+                 -webkit-mask-image: linear-gradient(to bottom,rgba(0, 0, 0, 1) 80%,rgba(0, 0, 0, 0.95) 82%,rgba(0, 0, 0, 0.9) 84%,rgba(0, 0, 0, 0.85) 86%,rgba(0, 0, 0, 0.8) 88%,rgba(0, 0, 0, 0.7) 89%,rgba(0, 0, 0, 0.6) 90%,rgba(0, 0, 0, 0.5) 91%,rgba(0, 0, 0, 0.4) 92%,rgba(0, 0, 0, 0.3) 93%,rgba(0, 0, 0, 0.2) 94%,rgba(0, 0, 0, 0.1) 95%,rgba(0, 0, 0, 0.05) 96%,rgba(0, 0, 0, 0.02) 97%,rgba(0, 0, 0, 0.01) 98%,rgba(0, 0, 0, 0) 100%
+);}
+.content-wrapper-main,
+.content-wrapper-second-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 10px auto; /* Убираем любые внешние отступы */
+    padding: 20px;
+}
+.content-wrapper-3-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 10px auto; /* Убираем любые внешние отступы */
+    padding: 20px;
+}
+.content-wrapper-4-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 10px auto; /* Убираем любые внешние отступы */
+    padding: 20px;
+}
+.content-wrapper-5-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 10px auto; /* Убираем любые внешние отступы */
+    padding: 20px;
+}
+.content-wrapper-6-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 10px auto; /* Убираем любые внешние отступы */
+    padding: 20px;
+}
+    .text-section-main-fame {
+      flex-direction: column;
+      display: flex;
+      flex: 1;
+    }
+    .text-section-main-fame h1 {
+      display: flex;
+      align-self: flex-start;
+      font-size: 8rem;
+      font-weight: bold;
+    }
+    .text-section-main-fame h2{
+      text-align: right;
+      display: flex;
+      align-self: flex-start;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .text-section-main-fame h3{
+      margin-top: 2vh;
+      text-align: right;
+      display: flex;
+      align-self: flex-start;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .text-section-main-fame h4{
+      margin-top: 2vh;
+      text-align: left;
+      display: flex;
+      align-self: flex-start;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .text-section-main-fame h6 {
+      text-align: right;
+      display: flex;
+      align-self: flex-start;
+      font-size: 6rem;
+      font-weight: bold;
+    }
+    .text-colors-logo {
+      margin-left: 0.5vw;
+      color: #28a745;
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+    .text-colors-logo span {
+      color: #dc3545;
+    }
+    .image-section-heros-main-frame {
+      
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .image-section-heros-main-frame img {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      max-height: 1000px; /* Ограничение высоты изображения */
+      object-fit: cover; /* Подгонка изображения под нужные пропорции */
+    }
+    .image-section-heros-main-frame-video {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 1000px; /* Ограничение высоты видео */
+    object-fit: cover; /* Подгонка видео под нужные пропорции */
+  }
+  .navbar {
+            background-color: #d1d1d1 !important; /* Цвет фона шапки */
+            height: 44px !important;              /* Высота шапки */
+            padding: 0 !important;                /* Убираем внутренние отступы */
+        }
+
+        .navbar-brand img {
+            height: 29px !important;              /* Высота логотипа */
+            /* margin-left: 57vh; */
+            align-items: center;
+        }
+
+        .navbar-nav {
+            display: flex !important;
+            align-items: center !important;       /* Центровка текста по высоте */
+            gap: 37px !important;                 /* Расстояние между пунктами меню */
+            margin-left: -1.4vh !important;         /* Выталкиваем меню вправо */
+            padding: 0 !important;                /* Убираем отступы */
+        }
+
+        .nav-item {
+            margin: 0 !important;                 /* Убираем отступы у элементов списка */
+        }
+
+        .nav-link {
+            color: #636366 !important;            /* Цвет текста */
+            font-size: 11.5px !important;           /* Размер шрифта */
+            font-weight: 100!important;          /* Жирность текста */
+            font-family: DaysOne-c;
+            text-transform: uppercase !important; /* Заглавные буквы */
+            text-decoration: none !important;     /* Убираем подчеркивание */
+            padding: 0 !important;                /* Убираем отступы вокруг текста */
+            line-height: 60px !important;         /* Устанавливаем высоту строки для центрирования текста */
+            transition: color 0.3s ease !important; /* Плавный переход цвета при наведении */
+        }
+
+        .nav-link:hover {
+            color: #000 !important;               /* Цвет при наведении */
+        }
+        footer {
+	background-image: url(../img/bg1.jpg);
+	left: 0px;
+	position: absolute;
+	z-index: 100;
+	bottom: -5vh;
+    user-select:  #cccccc;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	right: 0;
+}
+.footer-line {
+	border-top: 2px solid #ccc; 
+}
+  </style>
+</head>
+<body>
+  <header class="navbar navbar-expand-lg fixed-top " style="background-color: #d1d1d1; padding: 0; height: 40px;">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav w-100 justify-content-center" style="height: 100%; margin: 0;">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#" onclick="reloadPage()" style="padding: 0;">
+                    <img src="img/LogoBig.png" alt="Лого">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="font-size: 16px; padding: 0 15px;">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="catalog2.html" style="font-size: 16px; padding: 0 15px;">Каталог</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size: 16px; padding: 0 15px;">История бренда</a>
+            </li>
+        </ul>
+    </div>
+</header>
+    <body>
+        <div class="content-wrapper-main">
+          <div class="text-section-main-fame">
+            <h1>ИСТОРИЯ<br>БРЕНДА</h1>
+            <div class="text-colors-logo">
+              CULTU<span>RA</span>
+            </div>
+          </div>
+          <div class="image-section-heros-main-frame">
+            <img class="image-fade-for-photos" src="img/mainphoto.png" alt="Модели">
+          </div>
+        </div>
+        <div class="content-wrapper-second-frame">
+          <div class="image-section-heros-main-frame">
+            <img class="image-fade-for-photos" src="img/SecondPhoto.png" alt="Модели">
+          </div>
+          <div class="text-section-main-fame">
+            <h2>CULTURA — бренд одежды, зародившийся в Татарстане, в период всеобщей цифровизации является объединением искусственного и естественного интеллекта. Нам было интересно, что может получиться, если за создание одежды возьмётся разум, который сам по себе в ней не нуждается.</h2>
+            <h3>Коллекция создана для функционального и стильного подбора одежды, которую можно комбинировать между собой, и таким образом создавать множество уникальных образов.</h3>
+            <div class="text-colors-logo">
+            </div>
+          </div>  
+        </div>
+        <div class="content-wrapper-3-frame">
+          <div class="text-section-main-fame">
+            <h1>ПЕРВАЯ<br>КОЛЛЕКЦИЯ</h1>
+            <h4>Наша первая коллекция вдохновлена богатой и красочной культурой Татарстана, и мы не могли дождаться, чтобы поделиться этой замечательной коллекцией с вами.</h4>
+            <h4>Традиционные мотивы, уникальные цветовые сочетания и изысканные орнаменты стали источником вдохновения для наших дизайнеров. Мы воплотили дух этой культуры в каждой детале нашей одежды.</h4>
+          </div>
+          <div class="image-section-heros-main-frame">
+            <img class="image-fade-for-photos" src="img/third.png" alt="Модели">
+          </div>
+        </div>
+        <div class="content-wrapper-4-frame">
+           <video autoplay loop muted class="image-section-heros-main-frame-video">
+              <source src="video/clip1.mp4" type="video/mp4">
+           </video>
+           <div class="text-section-main-fame">
+             <h6>Бренд CULTURA на выставке FashionBitva</h6>
+             <h3>FashionBitva — это ведущее в России мероприятие в области моды, на котором представлены последние коллекции от локальных брендов.</h3>
+             <h3>Участие в этой выставке — уникальная возможность для CULTURA продемонстрировать свои эксклюзивные дизайны и расширить свою аудиторию.</h3>
+           </div>
+        </div>
+        <div class="content-wrapper-5-frame">
+          <div class="text-section-main-fame">
+            <h1>Грандиозная выставка одежды прошла в Казахстане!</h1>
+          </div>
+          <video autoplay loop muted class="image-section-heros-main-frame-video">
+            <source src="video/clip2.mp4" type="video/mp4">
+         </video>
+        </div>
+        <div class="content-wrapper-6-frame">
+          <video autoplay loop muted class="image-section-heros-main-frame-video">
+            <source src="video/clip3.mp4" type="video/mp4">
+         </video>
+         <div class="text-section-main-fame">
+           <h6>CULTURA на Tatarstan Fashion Week!</h6>
+           <h3>Мы с радостью представили на подиуме нашу коллекцию одежды для активного отдыха - стильные футболки, спортивные штаны и худи!</h3>
+         </div>
+        </div>
+        <footer class="textfoter" data-speed=".9" ></footer>
+				<hr class="footer-line">
+				<div class="container">
+					<div class="row">
+						<a href="#">
+							<img src="img/LogoBig.png" alt="Логотип" style="width: 20px; height: auto; margin-bottom: 10px;">
+						</a>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h5>О компании</h5>
+							<p>О нас</p>
+							<p>Реквизиты</p>
+							<p>Политика конфиденциальности</p>
+							<p>© 2024 ООО Культура. Все права защищены.</p>
+						</div>
+						<div class="col">
+							<h5>Контакты</h5>
+							<ul>
+								<p><a href="">г. Казань, Рахимова 8</a></p>
+								<p><a href="">+7 (800) 234-48-98</a></p>	
+								<p><a href="">Контакты</a></p>
+								<a href="https://vk.com/club227785632">
+									<img src="img/VK.png" alt="Логотип" style="width: 20px; height: auto;">
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div> 
+			</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
